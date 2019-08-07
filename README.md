@@ -1,2 +1,2 @@
 # myMarkdown
-This is markdown memo application
+This is markdown memo application.
