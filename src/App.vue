@@ -7,7 +7,7 @@
 
 <script>
 import Home from "./components/Home.vue";
-import Editor from "./components/Editor.vue"; 
+import Editor from "./components/Editor.vue";
 export default {
   name: 'app',
   data () {
