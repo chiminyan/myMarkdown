@@ -35,6 +35,13 @@ export default {
             selectedIndex: 0
         };
     },
+    created: function() {
+        firebase.database().ref("memos/" + this.user.uid).once("value").then(result => {
+            if (result.val()) {
+                this.memos = result.val();
+            }
+        })
+    },
     methods: {
         logout: function() {
             firebase.auth().signOut();
@@ -62,6 +69,17 @@ export default {
         displayTitle: function(text) {
             return text.split(/\n/)[0];
         }
+    },
+    mounted: function() {
+        document.onkeydown = e => {
+            if (e.key == "s" && (e.metaKey || e.ctrlKey)) {
+                this.saveMemos();
+                return false;
+            }
+        }
+    },
+    beforeDestroy: function() {
+        document.onkeydown = null;
     }
 };
 </script>
