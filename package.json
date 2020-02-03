@@ -10,8 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "@firebase/database": "^0.4.12",
-    "firebase": "^6.6.2",
+    "@firebase/database": "^0.5.20",
+    "firebase": "^7.8.0",
     "shitajicss": "^5.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
@@ -22,19 +22,19 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.2.1",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
-    "marked": "^0.7.0",
+    "cross-env": "^7.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "marked": "^0.8.0",
     "node-sass": "^4.13.1",
-    "sass-loader": "^6.0.6",
-    "vue-loader": "^13.0.5",
+    "sass-loader": "^8.0.2",
+    "vue-loader": "^15.8.3",
     "vue-template-compiler": "^2.6.11",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.2"
   }
 }
